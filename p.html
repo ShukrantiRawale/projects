@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Streaming Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="styles.css">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tv shows</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Drama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Recently Added</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="hero-section">
+                <div class="overlay"></div>
+                <img src="C:\Users\rawal\OneDrive\Pictures\Screenshots\Screenshot 2024-08-02 161108.png" alt="Mirzapur" class="hero-image">
+                <div class="show-info">
+                    <h1>MIRZAPUR</h1>
+                    <p>Season 1</p>
+                    <p>98% Match • Episode 3</p>
+                    <button class="resume-btn">Resume</button>
+                    <button class="list-btn">+ My List</button>
+                </div>
+            </div>
+            <div class="episodes">
+                <h2></h2>
+                <div class="episode-carousel">
+                    <!-- Episodes will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+<style>
+
+.image-container img {
+    width: 500%;
+    height: auto;
+    display: block;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.container {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content li {
+    padding: 12px 16px;
+}
+
+nav ul li .dropdown-content li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.main-content {
+    padding: 200px;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.show-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.show-info h1 {
+    font-size: 48px;
+}
+
+.show-info p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.resume-btn, .list-btn {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resume-btn {
+    background-color: #e50914;
+    color: white;
+}
+
+.list-btn {
+    background-color:black
+    color: white;
+}
+
+.episodes {
+    margin-top: 20px;
+}
+
+.episodes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.episode-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.episode {
+    text-align: center;
+    cursor: pointer;
+}
+
+.episode img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px auto;
+    text-align: right;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 200px;
+}
+</style>
+    
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/ubuZaeGvYws?si=YF_5qtIj7DTz5sUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/vtQshLead3w?si=O2Opvg9wEDPQptKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               
+           
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/WQ8Q_XsDY6c?si=i-PUN2-hjWR8B9bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/WQkEy4_b_Qk?si=mOR_26YSGVOqA1pD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/_0mGCAdz4v4?si=rQNPNb4ic6i4O8AN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        

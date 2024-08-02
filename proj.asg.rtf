@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1 {\f0\fs22\lang9{\field{\*\fldinst{HYPERLINK "file:///D:/project/project/p.html"}}{\fldrslt{file:///D:/project/project/p.html\ul0\cf0}}}}\f0\fs22\par
+\par
+\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+    <meta charset="UTF-8">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+    <title>TV Show Streaming Platform</title>\par
+    <link rel="stylesheet" href="styles.css">\par
+</head>\par
+<body>\par
+    <div class="container">\par
+        <nav>\par
+            <ul>\par
+                <li><a href="styles.css">Home</a></li>\par
+                <li class="dropdown">\par
+                    <a href="#">Tv shows</a>\par
+                    <ul class="dropdown-content">\par
+                        <li><a href="#">Action</a></li>\par
+                        <li><a href="#">Comedy</a></li>\par
+                        <li><a href="#">Drama</a></li>\par
+                    </ul>\par
+                </li>\par
+                <li><a href="#">Movies</a></li>\par
+                <li><a href="#">Recently Added</a></li>\par
+            </ul>\par
+        </nav>\par
+        <div class="main-content">\par
+            <div class="hero-section">\par
+                <div class="overlay"></div>\par
+                <img src="C:\\Users\\rawal\\OneDrive\\Pictures\\Screenshots\\Screenshot 2024-08-02 161108.png" alt="Mirzapur" class="hero-image">\par
+                <div class="show-info">\par
+                    <h1>MIRZAPUR</h1>\par
+                    <p>Season 1</p>\par
+                    <p>98% Match \f1\bullet  Episode 3</p>\par
+                    <button class="resume-btn">Resume</button>\par
+                    <button class="list-btn">+ My List</button>\par
+                </div>\par
+            </div>\par
+            <div class="episodes">\par
+                <h2></h2>\par
+                <div class="episode-carousel">\par
+                    <!-- Episodes will be dynamically inserted here -->\par
+                </div>\par
+            </div>\par
+        </div>\par
+    </div>\par
+  \par
+    <!-- Modal -->\par
+    <div id="modal" class="modal">\par
+        <span class="close">&times;</span>\par
+        <img class="modal-content" id="modalImage">\par
+        <div id="caption"></div>\par
+    </div>\par
+\par
+<style>\par
+\par
+.image-container img \{\par
+    width: 500%;\par
+    height: auto;\par
+    display: block;\par
+\}\par
+\par
+    body, html \{\par
+    margin: 0;\par
+    padding: 0;\par
+    font-family: Arial, sans-serif;\par
+    background-color: #141414;\par
+    color: white;\par
+\}\par
+\par
+.container \{\par
+    max-width: 1900px;\par
+    margin: 0 auto;\par
+\}\par
+\par
+nav \{\par
+    display: flex;\par
+    justify-content: center;\par
+    background-color: black;\par
+    padding: 10px 0;\par
+\}\par
+\par
+nav ul \{\par
+    list-style: none;\par
+    display: flex;\par
+    gap: 20px;\par
+\}\par
+\par
+nav ul li \{\par
+    position: relative;\par
+\}\par
+\par
+nav ul li a \{\par
+    color: white;\par
+    text-decoration: none;\par
+    font-size: 16px;\par
+\}\par
+\par
+nav ul li .dropdown-content \{\par
+    display: none;\par
+    position: absolute;\par
+    background-color: black;\par
+    min-width: 160px;\par
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\par
+    z-index: 1;\par
+\}\par
+\par
+nav ul li .dropdown-content li \{\par
+    padding: 12px 16px;\par
+\}\par
+\par
+nav ul li .dropdown-content li a \{\par
+    color: white;\par
+    text-decoration: none;\par
+\}\par
+\par
+nav ul li:hover .dropdown-content \{\par
+    display: block;\par
+\}\par
+\par
+.main-content \{\par
+    padding: 200px;\par
+\}\par
+\par
+.hero-section \{\par
+    position: relative;\par
+\}\par
+\par
+.hero-image \{\par
+    width: 100%;\par
+    height: auto;\par
+    display: block;\par
+    border-radius: 10px;\par
+\}\par
+\par
+.overlay \{\par
+    position: absolute;\par
+    top: 0;\par
+    left: 0;\par
+    width: 100%;\par
+    height: 100%;\par
+    background: rgba(0, 0, 0, 0.5);\par
+    border-radius: 10px;\par
+\}\par
+\par
+.show-info \{\par
+    position: absolute;\par
+    top: 20px;\par
+    right: 20px;\par
+\}\par
+\par
+.show-info h1 \{\par
+    font-size: 48px;\par
+\}\par
+\par
+.show-info p \{\par
+    margin: 5px 0;\par
+    font-size: 18px;\par
+\}\par
+\par
+.resume-btn, .list-btn \{\par
+    padding: 10px 20px;\par
+    margin: 10px 5px 0 0;\par
+    border: none;\par
+    font-size: 16px;\par
+    cursor: pointer;\par
+    border-radius: 5px;\par
+\}\par
+\par
+.resume-btn \{\par
+    background-color: #e50914;\par
+    color: white;\par
+\}\par
+\par
+.list-btn \{\par
+    background-color:black\par
+    color: white;\par
+\}\par
+\par
+.episodes \{\par
+    margin-top: 20px;\par
+\}\par
+\par
+.episodes h2 \{\par
+    font-size: 24px;\par
+    margin-bottom: 10px;\par
+\}\par
+\par
+.episode-carousel \{\par
+    display: flex;\par
+    overflow-x: auto;\par
+    gap: 10px;\par
+\}\par
+\par
+.episode \{\par
+    text-align: center;\par
+    cursor: pointer;\par
+\}\par
+\par
+.episode img \{\par
+    width: 150px;\par
+    height: auto;\par
+    border-radius: 5px;\par
+    display: block;\par
+    margin: 0 auto 10px auto;\par
+    text-align: right;\par
+\}\par
+\par
+/* Modal Styles */\par
+.modal \{\par
+    display: none;\par
+    position: fixed;\par
+    z-index: 1;\par
+    padding-top: 100px;\par
+    left: 0;\par
+    top: 0;\par
+    width: 100%;\par
+    height: 100%;\par
+    overflow: auto;\par
+    background-color: rgb(0,0,0);\par
+    background-color: rgba(0,0,0,0.9);\par
+\}\par
+\par
+.modal-content \{\par
+    margin: auto;\par
+    display: block;\par
+    width: 80%;\par
+    max-width: 700px;\par
+\}\par
+\par
+.close \{\par
+    position: absolute;\par
+    top: 15px;\par
+    right: 35px;\par
+    color: #f1f1f1;\par
+    font-size: 40px;\par
+    font-weight: bold;\par
+    transition: 0.3s;\par
+\}\par
+\par
+.close:hover,\par
+.close:focus \{\par
+    color: #bbb;\par
+    text-decoration: none;\par
+    cursor: pointer;\par
+\}\par
+\par
+#caption \{\par
+    margin: auto;\par
+    display: block;\par
+    width: 80%;\par
+    max-width: 200px;\par
+    text-align: center;\par
+    color: #ccc;\par
+    padding: 10px 0;\par
+    height: 200px;\par
+\}\par
+</style>\par
+    \par
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/ubuZaeGvYws?si=YF_5qtIj7DTz5sUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\par
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/vtQshLead3w?si=O2Opvg9wEDPQptKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\par
+               \par
+           \par
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/WQ8Q_XsDY6c?si=i-PUN2-hjWR8B9bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\par
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/WQkEy4_b_Qk?si=mOR_26YSGVOqA1pD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\par
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/_0mGCAdz4v4?si=rQNPNb4ic6i4O8AN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\par
+        \f0\par
+}
+ 
